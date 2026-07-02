@@ -2,10 +2,10 @@
 
 words = ["Donkey", "bad", "worst"]
 
-with open("file.txt") as f:
+with open("../Files/file.txt") as f:
     content = f.read()
 for word in words:
     content = content.replace(word, "#" * len(word))
 
-with open("file.txt", "w") as f:
+with open("../Files/file.txt", "w") as f:
     f.write(content)

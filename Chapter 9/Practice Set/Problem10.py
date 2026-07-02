@@ -1,4 +1,4 @@
 # 10. Write a program to wipe out the content of a file using python.
 
-with open("hi-score.txt", "w") as f:
+with open("../Files/hi-score.txt", "w") as f:
     f.write("")

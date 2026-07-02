@@ -1,4 +1,4 @@
-f = open("file.txt")
+f = open("../Files/file.txt")
 
 data = f.read()
 print(data)

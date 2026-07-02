@@ -10,7 +10,7 @@ def game():
     print("You are playing the game...")
     score = random.randint(1, 33)
 
-    with open("hi-score.txt") as f:
+    with open("../Files/hi-score.txt") as f:
         hiscore = f.read()
         if hiscore != "":
             hiscore = int(hiscore)
@@ -20,7 +20,7 @@ def game():
     print(f"Your score is: {score}")
 
     if score > hiscore or hiscore == "":
-        with open("hi-score.txt", "w") as f:
+        with open("../Files/hi-score.txt", "w") as f:
             f.write(str(score))
 
     return score
